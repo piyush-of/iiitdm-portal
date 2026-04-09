@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | IIITDMJ Portal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#44474e",
+                    "surface-container": "#e2efff",
+                    "surface-container-high": "#d9eafc",
+                    "secondary": "#0061a4",
+                    "outline-variant": "#c4c6cf",
+                    "surface-variant": "#d4e4f6",
+                    "tertiary-fixed": "#ffdbcb",
+                    "tertiary-container": "#3e1500",
+                    "surface-container-highest": "#d4e4f6",
+                    "surface-bright": "#f7f9ff",
+                    "on-tertiary-fixed": "#341100",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#00355c",
+                    "on-secondary-fixed-variant": "#00497d",
+                    "surface-container-low": "#ecf4ff",
+                    "surface": "#f7f9ff",
+                    "on-primary-fixed-variant": "#2d476f",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#708ab5",
+                    "on-background": "#0d1d2a",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed": "#001b3d",
+                    "on-tertiary-container": "#e46100",
+                    "primary-container": "#002147",
+                    "inverse-surface": "#223240",
+                    "tertiary-fixed-dim": "#ffb692",
+                    "secondary-fixed": "#d1e4ff",
+                    "primary-fixed-dim": "#aec7f6",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#33a0fd",
+                    "inverse-primary": "#aec7f6",
+                    "surface-tint": "#465f88",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#7a3000",
+                    "secondary-fixed-dim": "#9ecaff",
+                    "on-secondary-fixed": "#001d36",
+                    "outline": "#74777f",
+                    "inverse-on-surface": "#e7f2ff",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#1a0500",
+                    "primary-fixed": "#d6e3ff",
+                    "background": "#f7f9ff",
+                    "surface-dim": "#cbdcee",
+                    "on-surface": "#0d1d2a",
+                    "primary": "#000a1e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 backdrop-blur-xl flex justify-between items-center w-full px-8 py-4">
+<div class="flex items-center gap-4">
+<span class="text-xl font-black tracking-tighter text-slate-900">IIITDMJ Portal</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-500 hover:text-slate-800 transition-colors font-manrope tracking-tight font-bold" href="#">Directory</a>
+<a class="text-slate-500 hover:text-slate-800 transition-colors font-manrope tracking-tight font-bold" href="#">Academics</a>
+<a class="text-slate-500 hover:text-slate-800 transition-colors font-manrope tracking-tight font-bold" href="#">Research</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-slate-100/50 transition-all duration-300 scale-95 active:scale-90">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 rounded-full hover:bg-slate-100/50 transition-all duration-300 scale-95 active:scale-90">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+<img alt="Student Profile Avatar" class="w-10 h-10 rounded-full object-cover border-2 border-surface-container-high" data-alt="professional headshot of a young student in a modern architectural setting with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTob99G8ow3t57AskdbwaXP7NbOdTgL-3UkvDeFfc_NQVuIgp4wXZSAPbZNiNLotITYJNJew4J77WKP0HXAoccQeEIyKayENzALGrEi8Li6FwEFytOhcT65l-hY6ykK_2-qxFJ5tcwrkvfm1gGWPdzyWhDj4LBrz89ifG9CqMy6j5tK0gYV-MLiVs4iZa-j8ygY2Xr3vAE12RK_xIjYEtayrkkXIqfyu_3c8-4YCW9qREMtKCA8pAhb79iinHFkisEy72oZ4uaJuY"/>
+</div>
+</header>
+<!-- SideNavBar -->
+<aside class="h-screen w-64 fixed left-0 top-0 pt-20 bg-slate-100 flex flex-col gap-2 py-6 pr-4 hidden lg:flex">
+<div class="px-6 mb-8">
+<h2 class="text-lg font-bold text-slate-900">IIITDM Jabalpur</h2>
+<p class="text-xs font-semibold tracking-wide text-slate-500 uppercase">Design &amp; Manufacturing</p>
+</div>
+<nav class="flex-1">
+<a class="flex items-center gap-3 px-6 py-3 text-slate-500 hover:text-slate-700 hover:translate-x-1 transition-transform duration-200 font-manrope text-sm font-semibold tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                Dashboard
+            </a>
+<a class="flex items-center gap-3 px-6 py-3 text-slate-500 hover:text-slate-700 hover:translate-x-1 transition-transform duration-200 font-manrope text-sm font-semibold tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+                Team
+            </a>
+<a class="flex items-center gap-3 px-6 py-3 text-slate-500 hover:text-slate-700 hover:translate-x-1 transition-transform duration-200 font-manrope text-sm font-semibold tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+                History
+            </a>
+<a class="flex items-center gap-3 px-6 py-3 text-slate-900 font-bold bg-white rounded-l-none rounded-r-full shadow-sm font-manrope text-sm tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
+                Mission
+            </a>
+<a class="flex items-center gap-3 px-6 py-3 text-slate-500 hover:text-slate-700 hover:translate-x-1 transition-transform duration-200 font-manrope text-sm font-semibold tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+                Contact
+            </a>
+</nav>
+<div class="px-6 pt-4 mt-auto">
+<button class="w-full py-3 px-4 bg-primary text-on-primary rounded-xl font-bold text-sm scale-95 active:scale-90 transition-transform">
+                Contribute
+            </button>
+</div>
+<div class="mt-4 px-6 flex flex-col gap-2 opacity-60">
+<a class="flex items-center gap-2 text-xs font-semibold" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="gavel">gavel</span> Legal
+            </a>
+<a class="flex items-center gap-2 text-xs font-semibold" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="lock">lock</span> Privacy
+            </a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="lg:ml-64 pt-24 pb-12 px-6 md:px-12 min-h-screen">
+<!-- Hero Section: The Vision -->
+<section class="mb-16">
+<div class="relative overflow-hidden rounded-3xl p-8 md:p-16 bg-primary-container text-white">
+<div class="relative z-10 max-w-2xl">
+<span class="inline-block px-3 py-1 rounded-full bg-tertiary-container text-on-tertiary-container text-xs font-bold tracking-widest uppercase mb-6">The Vision</span>
+<h1 class="text-4xl md:text-6xl font-black tracking-tighter mb-6 leading-tight">Integrating Design, Tech, and Manufacturing.</h1>
+<p class="text-lg text-on-primary-container leading-relaxed mb-8">
+                        The IIITDMJ Portal is more than a utility; it's a digital ecosystem designed to bridge the gap between academic excellence and operational precision. We unify academic management, placement tracking, and campus resources into a singular, high-performance interface.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full border border-white/20">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="architecture">architecture</span>
+<span class="text-sm font-bold">Design Centric</span>
+</div>
+<div class="flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full border border-white/20">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span class="text-sm font-bold">Manufacturing Rigor</span>
+</div>
+</div>
+</div>
+<!-- Abstract BG Decoration -->
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
+<svg class="w-full h-full scale-150" fill="none" viewbox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<path d="M400 0H0V400H400V0Z" fill="url(#paint0_linear)"></path>
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="paint0_linear" x1="0" x2="400" y1="0" y2="400">
+<stop stop-color="white"></stop>
+<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+</div>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- The Creator: Piyush Kumawat -->
+<section class="md:col-span-7 bg-surface-container-lowest rounded-3xl p-8 shadow-sm flex flex-col md:flex-row gap-8 items-center border border-outline-variant/15">
+<div class="shrink-0">
+<img alt="Piyush Kumawat Profile" class="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover shadow-lg" data-alt="Professional portrait of a young male software developer in a studio setting with clean lighting and minimal background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBky7Qcn4IAcCMx_XhgyCuSuuqYho9Y4yiKbJHfSXoExWRHmteMsdbrz-qTcxwO0qg1Yzh52P38iuvqof2PdsZGuuzVf4L5XKkpI9GiqNxEQk7RMmtTLWekZKrGQzaMDTnoljPViaN1VL6OOg9z7blnNQxUA84-aSOhhn1-DaayOAfxJrNcLE0QCfWWtxIZ6LIJftZMDUkxCw9wzHYZmHnJObg906JQfGJsbfKPosRvDRuv4DPHjynE6BUYTztLOV2BgiDlLaHqZF0"/>
+</div>
+<div class="flex-1">
+<span class="text-on-tertiary-container font-black tracking-tighter text-xs uppercase mb-2 block">Lead Architect</span>
+<h2 class="text-3xl font-bold text-primary mb-4">Piyush Kumawat</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        As a student at IIITDM Jabalpur, Piyush envisioned a portal that reflected the institute's core philosophy of innovation. With a focus on high-end UI/UX and scalable architecture, he leads the technical direction of the portal.
+                    </p>
+<div class="flex gap-4">
+<a class="p-3 bg-surface-container rounded-xl hover:bg-secondary-container transition-colors group" href="#">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="code">code</span>
+</a>
+<a class="p-3 bg-surface-container rounded-xl hover:bg-secondary-container transition-colors group" href="#">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="person_search">person_search</span>
+</a>
+<a class="p-3 bg-surface-container rounded-xl hover:bg-secondary-container transition-colors group" href="#">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="alternate_email">alternate_email</span>
+</a>
+</div>
+</div>
+</section>
+<!-- The Organization -->
+<section class="md:col-span-5 bg-surface-container-low rounded-3xl p-8 flex flex-col justify-between">
+<div>
+<h3 class="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="hub">hub</span>
+                        Student Innovation Lab
+                    </h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        The Portal Development Team operates under the Student Innovation Lab, a collaborative space where ideas are forged into production-ready software. We prioritize peer mentorship and industrial standards.
+                    </p>
+</div>
+<div class="mt-8 pt-8 border-t border-outline-variant/30">
+<div class="flex -space-x-4">
+<img alt="team" class="w-10 h-10 rounded-full border-4 border-surface-container-low" data-alt="headshot of a team member" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLs7b4Kdn9_gJdqZtKu5dUo5MQF0ZOY5tEv1-2ujZ6ejEPuOIobyOrCIyRd_CPT18GLDYl5UkrR_jahVtjGL9F7f8lDwT-oKUiRgC-u3oiDfpAOt8hci-3m1tLKW1GApND1E6R9DmR3Aq_eLShyzJjxuBbxtXrI8QTX-yGVuzNluAng_Rns92U_ZKpAiE3P3WB4NDdvxRcfbOm2KwA4JhDHV3fmiV745xUh7APbXiOHQ9mtiwLyF3xTTgKwdYAc9b3HtMKFeG3EiQ"/>
+<img alt="team" class="w-10 h-10 rounded-full border-4 border-surface-container-low" data-alt="headshot of a team member" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhs8qgj-_oeq_HYkaoqqzJKX0lEENFUhmdMDqnLJ20nV6Qx6RvUa4856yh2yvu8R3DORKLDSfdaJiQ-vwQjYmwd2ij345-e4BIINPQ8Y6DACGEni5MHQx1WamCpduc1gmMbOXrtCm-EY5c4RVfnEWGXj0VbtPs8__yoHgqO33qMa-26HKLEMxIIjxe-Yml7_WS7e8QKnBwa4-Dztj3owMZKLSD9TZVQhhSA8qPGDzOn7DViTQNUDhK1RZv2tm1A-WAg6u384CXEQc"/>
+<img alt="team" class="w-10 h-10 rounded-full border-4 border-surface-container-low" data-alt="headshot of a team member" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5yhlytnwIs8tjHSfsdmKVEnN_L54w0cC0jogNdLjuHBABA-nZO2P-Q2Mk2uZbwhvribXzLoPmg6cCEz55seLSab0YU9Zqe3ZFzIlNCFASB8TFr-gPexikWF_CGjlAceJDcAGJlalnN076tUdeuUmqBdjj9FGaPGnoWHX8vaqGxSOBkRfKrFCpE5N1OH4g3Q3YqhiQIu_H0TvwcaeSC_-rAxaL9fQU_cwRIMSyp-B2w3_kbC12J5NLihieJJo9YCFsOtvD1Fm6zoo"/>
+<div class="w-10 h-10 rounded-full border-4 border-surface-container-low bg-secondary flex items-center justify-center text-[10px] font-bold text-white uppercase">
+                            +12
+                        </div>
+</div>
+<p class="text-xs font-bold text-on-surface-variant mt-3 uppercase tracking-wider">Contributors</p>
+</div>
+</section>
+<!-- Tech Stack -->
+<section class="md:col-span-8 bg-surface-container-highest rounded-3xl p-8">
+<h3 class="text-sm font-black text-primary uppercase tracking-[0.2em] mb-8">Forge Technology Stack</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center gap-3 text-center transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-3xl text-secondary" data-icon="layers">layers</span>
+<span class="text-xs font-bold font-headline uppercase">React</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center gap-3 text-center transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-3xl text-secondary" data-icon="palette">palette</span>
+<span class="text-xs font-bold font-headline uppercase">Tailwind</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center gap-3 text-center transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-3xl text-secondary" data-icon="database">database</span>
+<span class="text-xs font-bold font-headline uppercase">PostgreSQL</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center gap-3 text-center transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-3xl text-secondary" data-icon="terminal">terminal</span>
+<span class="text-xs font-bold font-headline uppercase">Node.js</span>
+</div>
+</div>
+</section>
+<!-- Support / Contact -->
+<section class="md:col-span-4 bg-tertiary-fixed rounded-3xl p-8 flex flex-col justify-between">
+<div>
+<h3 class="text-xl font-bold text-on-tertiary-fixed mb-4">Contact &amp; Support</h3>
+<p class="text-on-tertiary-fixed-variant text-sm mb-6">
+                        Encountered a bug or have a feature request? Our dev team is listening.
+                    </p>
+</div>
+<div class="flex flex-col gap-3">
+<button class="w-full py-4 bg-tertiary-container text-on-tertiary-container rounded-full font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-sm" data-icon="bug_report">bug_report</span>
+                        Report Issue
+                    </button>
+<button class="w-full py-4 border border-tertiary-container text-tertiary-container rounded-full font-bold flex items-center justify-center gap-2 hover:bg-tertiary-container/5 transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="rate_review">rate_review</span>
+                        Feedback
+                    </button>
+</div>
+</section>
+</div>
+<!-- Innovative Metric Footer -->
+<footer class="mt-16 pt-16 border-t border-surface-variant">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/10">
+<span class="text-[56px] font-headline font-black text-primary leading-none tracking-tighter">5k+</span>
+<p class="text-xs font-bold text-secondary uppercase tracking-widest mt-2">Active Users</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/10">
+<span class="text-[56px] font-headline font-black text-primary leading-none tracking-tighter">99.9%</span>
+<p class="text-xs font-bold text-secondary uppercase tracking-widest mt-2">Uptime Reliability</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/10">
+<span class="text-[56px] font-headline font-black text-primary leading-none tracking-tighter">150+</span>
+<p class="text-xs font-bold text-secondary uppercase tracking-widest mt-2">Modules Deployed</p>
+</div>
+</div>
+</footer>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full glass-panel flex justify-around py-4 px-6 border-t-0 shadow-[0_-8px_30px_rgb(0,0,0,0.04)] z-50">
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-900" href="#">
+<span class="material-symbols-outlined" data-icon="rocket_launch" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</nav>
+</body></html>

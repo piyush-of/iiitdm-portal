@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#d1e4ff",
+                    "on-error": "#ffffff",
+                    "outline": "#74777f",
+                    "background": "#f7f9ff",
+                    "surface-bright": "#f7f9ff",
+                    "tertiary-fixed-dim": "#ffb692",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#1a0500",
+                    "primary-fixed-dim": "#aec7f6",
+                    "surface-tint": "#465f88",
+                    "outline-variant": "#c4c6cf",
+                    "on-surface": "#0d1d2a",
+                    "on-primary-fixed-variant": "#2d476f",
+                    "on-primary-container": "#708ab5",
+                    "on-background": "#0d1d2a",
+                    "secondary-fixed-dim": "#9ecaff",
+                    "inverse-surface": "#223240",
+                    "surface-container": "#e2efff",
+                    "surface-container-high": "#d9eafc",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#cbdcee",
+                    "primary-container": "#002147",
+                    "on-tertiary-fixed-variant": "#7a3000",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#ecf4ff",
+                    "tertiary-fixed": "#ffdbcb",
+                    "tertiary-container": "#3e1500",
+                    "secondary": "#0061a4",
+                    "on-secondary-fixed-variant": "#00497d",
+                    "on-secondary-fixed": "#001d36",
+                    "secondary-container": "#33a0fd",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#e7f2ff",
+                    "surface-variant": "#d4e4f6",
+                    "on-tertiary-fixed": "#341100",
+                    "on-surface-variant": "#44474e",
+                    "error": "#ba1a1a",
+                    "surface-container-highest": "#d4e4f6",
+                    "surface": "#f7f9ff",
+                    "on-tertiary-container": "#e46100",
+                    "inverse-primary": "#aec7f6",
+                    "primary-fixed": "#d6e3ff",
+                    "on-secondary-container": "#00355c",
+                    "primary": "#000a1e",
+                    "on-primary-fixed": "#001b3d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50 dark:bg-slate-950 flex justify-between items-center px-8 h-16 max-w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">architecture</span>
+</div>
+<span class="text-xl font-bold tracking-tighter text-blue-900 dark:text-blue-50">The Academic Architect</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex gap-4">
+<button class="material-symbols-outlined text-slate-500 dark:text-slate-400 hover:bg-blue-50/50 dark:hover:bg-blue-900/20 transition-colors duration-300 p-2 rounded-full">help_outline</button>
+<button class="material-symbols-outlined text-slate-500 dark:text-slate-400 hover:bg-blue-50/50 dark:hover:bg-blue-900/20 transition-colors duration-300 p-2 rounded-full">language</button>
+</div>
+<img alt="University Institutional Logo" class="w-10 h-10 rounded-full border-2 border-outline-variant/20" data-alt="Sophisticated circular emblem of a technical university with geometric patterns and architectural motifs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEylxVk979FgsY1TJlYP9ABxwgc-egrwNlLXXPValjCScwD8FDi58q_esrIsWOsOlgfmY19Jo9jcaK_OAOcY7mfA79Uxoi3abt0Tgdhm0EMbf1Y7RYYqw8QGXWSRuY8wkFRCDKtEKjTrlXhYsWNZY6hIVP_1JqfpAf0axP0gbjFmNDj7i3779mCCpz-M_KLe08QaINc_w6JA00VBwZH1rsTykv4bdYhD21ojHOAZRnx8b49PcWg0G_0BXLyznHbF4A1ES8pv_Gy6I"/>
+</div>
+</header>
+<main class="flex-grow pt-24 pb-12 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto w-full">
+<!-- Welcome Section -->
+<section class="mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div>
+<h2 class="font-headline text-sm font-semibold text-secondary uppercase tracking-[0.2em] mb-4">Identity Authorization</h2>
+<h1 class="font-headline text-5xl font-extrabold text-primary tracking-tight leading-tight">
+                        Welcome back, User.<br/>
+<span class="text-on-primary-container">Select your portal access.</span>
+</h1>
+</div>
+<!-- Security Badge -->
+<div class="bg-surface-container-low p-6 rounded-xl border-b-2 border-secondary/20 flex items-center gap-4 min-w-[280px]">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div>
+<p class="font-headline text-primary font-bold text-lg">Arjun Mehta</p>
+<p class="text-xs font-label uppercase tracking-widest text-secondary font-semibold">Roll: 2024CS1052</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Role Selection Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+<!-- Student Portal -->
+<div class="group relative bg-surface-container-lowest p-8 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-[0px_12px_32px_rgba(13,29,42,0.04)] cursor-pointer overflow-hidden border-b-2 border-transparent hover:border-secondary">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-surface-container-low rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 opacity-50"></div>
+<div class="relative z-10">
+<div class="w-16 h-16 bg-surface-container-low rounded-xl flex items-center justify-center mb-8 group-hover:bg-secondary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-secondary text-3xl group-hover:text-white">school</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-2">Student Portal</h3>
+<p class="text-on-surface-variant text-sm mb-8 leading-relaxed">Access your academic journey, tracking, and career opportunities.</p>
+<div class="space-y-3">
+<div class="flex items-center gap-3 text-xs font-medium text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">auto_stories</span>
+<span>Academics &amp; Registration</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-medium text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">work_outline</span>
+<span>Placement Cell &amp; Internships</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-medium text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">account_balance_wallet</span>
+<span>Fees &amp; Resources</span>
+</div>
+</div>
+<button class="mt-10 w-full py-4 px-6 bg-primary text-on-primary rounded-xl font-bold tracking-tight group-hover:bg-secondary transition-all flex items-center justify-center gap-2">
+                        Enter Student Hub
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Faculty Portal -->
+<div class="group relative bg-surface-container-lowest p-8 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-[0px_12px_32px_rgba(13,29,42,0.04)] cursor-pointer overflow-hidden border-b-2 border-transparent hover:border-secondary">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-surface-container-low rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 opacity-50"></div>
+<div class="relative z-10">
+<div class="w-16 h-16 bg-surface-container-low rounded-xl flex items-center justify-center mb-8 group-hover:bg-secondary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-secondary text-3xl group-hover:text-white">biotech</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-2">Faculty Portal</h3>
+<p class="text-on-surface-variant text-sm mb-8 leading-relaxed">Management of course delivery, grading systems, and institutional research.</p>
+<div class="space-y-3">
+<div class="flex items-center gap-3 text-xs font-medium text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">grading</span>
+<span>Course Grading &amp; Analytics</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-medium text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">science</span>
+<span>Research Management</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-medium text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+<span>Lecture Scheduling</span>
+</div>
+</div>
+<button class="mt-10 w-full py-4 px-6 bg-surface-container-high text-primary rounded-xl font-bold tracking-tight group-hover:bg-primary group-hover:text-white transition-all flex items-center justify-center gap-2">
+                        Enter Faculty Hub
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Admin Console -->
+<div class="group relative bg-surface-container-lowest p-8 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-[0px_12px_32px_rgba(13,29,42,0.04)] cursor-pointer overflow-hidden border-b-2 border-transparent hover:border-tertiary-container">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-tertiary-fixed rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 opacity-30"></div>
+<div class="relative z-10">
+<div class="w-16 h-16 bg-surface-container-low rounded-xl flex items-center justify-center mb-8 group-hover:bg-tertiary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-secondary text-3xl group-hover:text-on-tertiary-container">admin_panel_settings</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-2">Admin Console</h3>
+<p class="text-on-surface-variant text-sm mb-8 leading-relaxed">System-wide configuration, security protocols, and staff administration.</p>
+<div class="space-y-3">
+<div class="flex items-center gap-3 text-xs font-medium text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">groups</span>
+<span>Staff Management</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-medium text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">security</span>
+<span>Security &amp; Auth Logs</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-medium text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">settings_input_component</span>
+<span>Core Infrastructure</span>
+</div>
+</div>
+<button class="mt-10 w-full py-4 px-6 bg-tertiary-container text-on-tertiary-container rounded-xl font-bold tracking-tight transition-all flex items-center justify-center gap-2">
+                        Enter Admin Panel
+                        <span class="material-symbols-outlined text-sm">lock_open</span>
+</button>
+</div>
+</div>
+</div>
+<!-- System Status Info -->
+<div class="bg-surface-container-high rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">info</span>
+<p class="text-sm text-on-surface-variant">Your current session is encrypted and restricted based on your institutional clearance levels.</p>
+</div>
+<div class="flex gap-8">
+<div class="text-center">
+<p class="text-[10px] uppercase tracking-widest text-secondary font-bold mb-1">Network Status</p>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+<span class="text-sm font-bold text-primary">SECURE</span>
+</div>
+</div>
+<div class="text-center">
+<p class="text-[10px] uppercase tracking-widest text-secondary font-bold mb-1">Last Login</p>
+<p class="text-sm font-bold text-primary">Today, 08:42 AM</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-8 border-none bg-slate-50 dark:bg-slate-950 flex flex-col md:flex-row justify-between items-center px-12 space-y-4 md:space-y-0">
+<p class="font-inter text-xs tracking-wide uppercase text-slate-400 dark:text-slate-500">
+            © 2024 Technical Institute of Architecture. All rights reserved.
+        </p>
+<div class="flex gap-8">
+<a class="font-inter text-xs tracking-wide uppercase text-slate-400 dark:text-slate-500 hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Privacy Policy</a>
+<a class="font-inter text-xs tracking-wide uppercase text-slate-400 dark:text-slate-500 hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Security Standards</a>
+<a class="font-inter text-xs tracking-wide uppercase text-slate-400 dark:text-slate-500 hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Support</a>
+</div>
+</footer>
+</body></html>
